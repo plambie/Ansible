@@ -1,8 +1,8 @@
 ansible_connection=winrm
 ansible_winrm_server_cert_validation=ignore
 tasks:
-name:install_IIS
+name: install_IIS
 win_feature:
-  name:web-server
-  state:present
+  name: web-server
+  state: present
   
