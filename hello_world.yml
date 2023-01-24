@@ -1,6 +1,8 @@
-ansible_connection=winrm
+ansible_connection: winrm
+ansible_user: plambie-admin
+ansible_password : DCP4ssword
 ansible_winrm_transport: kerberos
-ansible_winrm_server_cert_validation=ignore
+ansible_winrm_server_cert_validation : ignore
 tasks:
 name: install_IIS
 win_feature:
