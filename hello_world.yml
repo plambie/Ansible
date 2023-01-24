@@ -1,8 +1,10 @@
 ansible_connection: winrm
-ansible_user: plambie-admin
+ansible_user: plambie-admin@PETELAB.LOCAL
 ansible_password : DCP4ssword
 ansible_winrm_transport: kerberos
 ansible_winrm_server_cert_validation : ignore
+ansible_port: 5985
+ansible_become: false
 tasks:
 name: install_IIS
 win_feature:
