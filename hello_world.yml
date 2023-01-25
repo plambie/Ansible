@@ -1,12 +1,8 @@
-#ansible_connection: winrm
-#ansible_user: plambie-admin@PETELAB.LOCAL
-#ansible_password : DCP4ssword
-#ansible_winrm_transport: kerberos
-#ansible_winrm_server_cert_validation : ignore
-#ansible_port: 5985
-#ansible_become: false
+-name: install IIS playbook
+-hosts: all
+
 tasks:
-name: install_IIS
-win_feature:
-  name: web-server
+- name: install_IIS
+  win_feature:
+   name: web-server
   state: present
