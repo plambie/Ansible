@@ -1,8 +1,8 @@
-name: install IIS playbook
-hosts: all
+---
+# This playbook uses the win_ping module to test connectivity to Windows hosts
+- name: Ping 
+  hosts: all 
 
-tasks:
- name: install_IIS
-  win_feature:
-   name: web-server
-  state: present
+  tasks:
+  - name: ping
+    win_ping:
