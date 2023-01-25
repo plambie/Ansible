@@ -1,8 +1,8 @@
--name: install IIS playbook
--hosts: all
+name: install IIS playbook
+hosts: all
 
 tasks:
-- name: install_IIS
+ name: install_IIS
   win_feature:
    name: web-server
   state: present
